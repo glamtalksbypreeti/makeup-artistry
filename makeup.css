@@ -1,0 +1,513 @@
+@font-face{
+	font-family: "Canveat";
+	src: url(semibold.ttf);
+
+
+}
+
+
+
+/*-----Header------*/
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+.header{
+	width: 100%;
+	height: 100vh;
+	background: url(background-header.png);
+	background-position: center;
+	background-size: cover;
+
+}
+
+nav{
+	width: 100%;
+	padding: 4px 0;
+	text-align: center;
+	position: fixed;
+	z-index:1;
+	background-color: #fff;
+	border: 2px solid #d4af37;
+}
+
+nav h2{
+	float: left;
+	margin-left: 20px;
+	cursor: pointer;
+	margin-top: 15px;
+	font-family: 'Canveat', sans-serif;
+	color: #000;
+}
+
+nav ul{
+	margin-top: 0px;
+	float: right;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 20px 30px;
+	color: #000;
+	cursor: pointer;	
+}
+
+.fa-bars{
+	display: none !important;
+}
+
+.fa-bars{
+	color: #000;
+	float: right;
+	margin: 20px 40px;
+	font-size: 27px !important;
+
+}
+
+
+@media(max-width: 815px){
+	nav ul{
+		display: none;
+		background: rgba(0, 0, 0, 0.09);
+		width: 100%;
+	}
+
+	nav ul li{
+		margin-top: 40px;
+	}
+
+	.fa-bars{
+		display: block !important;
+		cursor: pointer;
+		color: #000;
+	}
+
+	
+
+}
+
+nav ul li::after{
+	content: "";
+	width: 0%;
+	height: 2px;
+	background: #000;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+
+}
+
+nav ul li:hover::after{
+	width: 100%;
+}
+
+.text{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.text h1{
+	font-family: "Canveat", sans-serif;
+	font-size: 50px;
+
+
+}
+
+.text h3{
+	font-family: "Roboto", sans-serif;
+	margin-top: 10px;
+	font-size: 21px;
+}
+
+.about{
+	width: 100%;
+	height: 80vh;
+	
+}
+
+.col-about{
+	background: #fff;
+	width: 65%;
+	height: 80vh;
+	float: left;
+	padding: 90px 70px;
+}
+
+.col-img{
+	background: url(col2image.jpg);
+	background-size: cover;
+	background-position: 70%;
+	width: 35%;
+	height: 80vh;
+	float: right;
+
+}
+
+
+
+
+.col-about h1{
+	font-family: "Canveat", sans-serif;
+	font-size: 70px;
+	color: #ab3cf0;
+}
+
+.col-about p{
+	letter-spacing: .2em;
+	color: #000;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 19px;
+}
+
+@media(max-width: 1100px){
+	.col-about{
+		width: 100%;
+		background: url(colored.jpg);
+		background-size: cover;
+		height: auto;
+	}
+
+	.col-img{
+		display: none;
+	}
+
+	.card-image1{
+		width: 100%;
+
+	}
+
+	.card-image2{
+		width: 100%;
+	}
+
+}
+
+/*-----Service------*/
+
+#service{
+	width: 100%;
+	padding: 70px 0;
+	border: 0.1px solid #4f4f4f;
+
+}
+
+.title-text{
+	margin-bottom: 40px;
+	text-align: center;
+
+}
+
+.title-text h1{
+	margin-bottom: 10px;
+	letter-spacing: .1em;
+	font-size: 35px;
+
+}
+
+.title-text p{
+	color: #4f4f4f;
+	font-size: 18px;
+}
+
+.service-box{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: auto;
+}
+
+.single-service{
+	flex-basis: 48%;
+	text-align: center;
+	border-radius: 7px;
+	margin-bottom: 20px;
+	color: #fff;
+
+}
+
+.single-service img{
+	width: 100%;
+	border-radius: 7px;
+}
+
+
+.service-desc{
+	color: #d4af37 ;
+	margin-top: 20px;
+	border: 3px solid #d4af37 ;
+	padding: 7px 0;
+	background: #000;
+	width: 70%;
+	transform: translateX(21%);
+	
+}
+
+.service-desc p{
+	font-family: "Canveat", sans-serif;
+	font-size: 29px;
+
+}
+
+@media screen and (max-width: 770px){
+	.single-service{
+		flex-basis: 100%;
+		margin-bottom: 30px;
+	}
+
+	.service-desc h1{
+		margin-bottom: 5px;
+
+	}
+
+	.single-service img{
+		width: 95%;
+
+	}
+
+
+
+}
+
+
+/*------Testimonails*/
+
+.testimonials{
+	width: 95%;
+	margin: auto;
+	padding-top: 10px;
+	text-align: center;
+}
+
+.testimonials h1{
+	margin: 30px 0;
+
+}
+
+
+
+.testimonial-col{
+	flex-basis: 44%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	text-align: left;
+	background: rgba(234, 207, 250, 0.3);
+	padding: 50px;
+	cursor: pointer;
+	display: flex;
+	transition: all 0.8s;
+}
+
+
+.testimonial-col img{
+	height: 45px;
+	margin-left: 5px;
+	margin-right: 30px;
+	border-radius: 60px;
+}
+
+
+.testimonial-col p{
+	padding: 0;
+	color: #000;
+}
+
+.testimonial-col h3{
+	margin-top: 15px;
+	text-align: left;
+	color: #000;
+}
+
+.testimonial-col:hover{
+	transform: scale(1.03);
+}
+
+/*-----FOOTER------*/
+
+#footer{
+	width: 100%;
+	height: auto;
+	color: #fff;
+	background: #000;
+	padding: 70px;
+}
+
+.content h2{
+	margin: 20px 0;
+	font-size: 29px;
+	font-family: "Quicksand", sans-serif;
+}
+
+.content p{
+	width: 55%;
+	letter-spacing: .1em;
+}
+
+.content h1{
+	margin: 30px 0;
+	font-family: "Quicksand", sans-serif;
+	font-size: 27px;
+}
+
+.fa-instagram{
+	font-size: 40px !important;
+	margin-bottom: 30px;
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.fa-youtube{
+	font-size: 40px !important;
+	margin: 10px 30px;
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.fa-instagram:hover, .fa-youtube:hover{
+	transform: scale(1.2);
+}
+
+.content img{
+	margin: 30px 0;
+	border: 1px solid #d4af37 ;
+}
+
+
+@media screen and (max-width: 600px){
+	nav h2{
+		font-size: 22px;
+		margin-top: 22px;
+		margin-left: 12px;
+	}
+
+	.fa-bars{
+		font-size: 21.5px !important;
+		margin-top: 24px !important;
+		margin-right: 24px;
+	}
+
+	.header{
+		background: url(model-3.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+
+	.text{
+		top: 55%;
+	}
+
+	.text h1{
+		color: #fff;
+		-webkit-text-stroke: 2px #000;
+		font-size: 60px;
+	}
+
+	.text h3{
+		font-size: 35px;
+		margin-top: -10px;
+		font-family: "Canveat";
+		-webkit-text-stroke: 1px #000;
+
+	}
+
+	.col-about{
+		padding: 10px 30px;
+	}
+
+	.col-about h1{
+		font-size: 43px;
+	}
+
+	.col-about p{
+		font-size: 18px;
+	}
+	.testimonials{
+		width: 90%;
+	}
+	.testimonial-col{
+		padding: 10px;
+	}
+
+	.content p{
+		width: 110%;
+	}
+
+	.content img{
+		margin-left: -12px;
+		width: 250px;
+	}
+
+	nav ul li{
+	font-size: 14px;
+	margin-left: -10px;
+	float: right;
+	}
+
+
+
+
+}
+
+/*-----FOR MORE SMALLER DEVICES-----*/
+
+@media screen and (max-width: 310px){
+	.content img{
+		width: 170px;
+	}
+
+	.col-about p{
+		font-size: 15px;
+		width: 105%;
+	}
+
+}
+
+.name-hidden{
+	font-size: 12px;
+	margin-top: 5px;
+	color: red !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
